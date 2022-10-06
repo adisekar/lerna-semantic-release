@@ -10,17 +10,29 @@
     "diff": "lerna diff",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release --ci -e semantic-release-monorepo"
+    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release --ci -e semantic-release-monorepo",
+    "postinstall": "patch-package",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@commitlint/config-lerna-scopes": "^16.0.0",
     "@commitlint/cz-commitlint": "^16.1.0",
+    "husky": "^7.0.4",
+    "@stencil/postcss": "^2.1.0",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-dark-theme-class": "^0.7.3",
+    "postcss-import": "^14.1.0",
+    "postcss-mixins": "^9.0.2",
+    "postcss-preset-env": "^7.5.0",
     "commitizen": "^4.2.4",
     "lerna": "^4.0.0",
     "semantic-release": "^19.0.2",
-    "semantic-release-monorepo": "^7.0.5"
+    "semantic-release-monorepo": "^7.0.5",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "2.1.0"
   },
   "config": {
     "commitizen": {
