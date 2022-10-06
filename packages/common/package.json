@@ -1,6 +1,6 @@
 {
-  "name": "@adisekar/common",
-  "version": "1.0.1",
+  "name": "@adi.sekar/common",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
