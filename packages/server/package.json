@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@adisekar/common": "^1.0.0",
+    "@adi.sekar/common": "*",
     "graphql-yoga": "^2.13.13"
   },
   "scripts": {
