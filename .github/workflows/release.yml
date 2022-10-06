@@ -14,9 +14,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "16.x"
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
+      - run: npm i -g lerna@4.0.0
+      - run: lerna bootstrap
+      - run: npx lerna run build --stream --if-present
+      - run: npx lerna run test --stream
       - run: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
