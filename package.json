@@ -22,9 +22,6 @@
     "semantic-release": "^19.0.5",
     "semantic-release-monorepo": "^7.0.5"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
